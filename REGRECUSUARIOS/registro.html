@@ -1,0 +1,46 @@
+<!--1.-En este apartado vamos a desarrolar una zona de registro de usuarios y tambien una zona donde identificarse. Estas aplicaciones las utilizan muchos portales para capturar usuarios y ofrecerles servicios exclusivos.
+
+Empezamos creando un peque;o formulario para que los usuarios se registren en nuestra web, al que llamaremos registro.html. -->
+<html>
+<head>
+<title>Creación de un portal con PHP y MySQL</title>
+</head>
+<body bgcolor="#303030">
+<body text= "#E5E5E5">
+<font face = "tahoma">
+<font size = "2">
+<body link = "#E5E5E5" vlink="E0E0E0">
+<p align = "center">	
+<STRONG>FORMULARIO DE REGISTRO DE USUARIOS</STRONG>
+<br><br>
+Inserte los datos que a continuacion se solicitan y en breve nos pondremos en contacto con usted.
+<form name="contacto" method="post" action="registro.php">
+	<p align = "left">
+			<strong>NOMBRE:</strong>
+			<br>
+			<input name="nombre" type="text" value="" size="50">
+			<br><br>
+
+			<strong>APELLIDOS:</strong>
+			<br>
+			<input name="apellidos" type="text" size="50">
+			<br><br>
+
+			<strong>NOMBRE DE USUARIO:</strong>
+			<br>
+			<input name="usuario" type="text" size="50">
+			<br><br>
+
+			<strong>CONTRASEÑA:</strong>
+			<br>
+			<input name="cont" type="password" size="50">
+			<br><br>
+
+			<strong>E-MAIL:</strong>
+			<br>
+			<input name="email" type="text" size="50">
+			<br><br>
+
+			<input type="submit" name="Submit" value="Enviar datos">
+	</p>
+</form>

@@ -1,0 +1,55 @@
+<!-- Para crear esta pequeña aplicacion, nos encontraremos con una nueva instruccion PHP, la funcion mail(), muy util para enviar correso electronicos sin necesidad de disponer de un gestor de correo electronico.
+
+La funcion mail() tiene que estar formada por tres partes principalmente: la direccion, el asunto del mensaje y el mensaje; pero ademas de estas se pueden añadir otras.
+
+La sinaxis es: mail(<emaildestino>, <asunto>, <mensaje>, [otros]); -->
+
+
+<!-- Vamos a realizar el ejemplo para que los usuarios recomienden nuestra web. Algo muy importante que debe saber es que, al crear esta aplicacion en modo local, no vera su resultado, ya que al trabajar en local no recibiremos e-mail,a no ser que tengamos instalado en nuestro ordenador un servidor de correo electrónico. Para probarlo corrextamente existen dos opciones. Una de ellas seria instalar un servidor de correo electronico o probar este ejemplo en un servidor alojado en internet, con el cual si recibiriamos los correos para comprobarlo.
+
+En este ejemplo debemos crear dos ficheros: elprimero sera un formulario HTML, donde el usuario introduce los datos; el otro sera un fichero PHP, que procesa los datos recibidos en el formulario para enviar el correo electrónico. Al formulario lo llamaremos recomiendaweb.html; al fichero PHP que procesa los datos, recomendar.php-->
+
+<html>
+<head>
+<title>Creación de un portal con PHP y MySQL</title>
+</head>
+<body bgcolor="#303030">
+<body text= "#E5E5E5">
+<font face = "tahoma">
+<font size = "2">
+<body link = "#E5E5E5" vlink="E0E0E0">
+
+<form name="formulario" method="post" action="recomendar.php">
+    
+    <p>
+    <h2>
+
+    Recomienda este sitio a un amigo:
+    </h2>
+    </p>
+    <p>
+
+    Tu nombre:
+    <br>
+    <input type="text" name="tunombre" size="20">
+    <br>
+
+    Tu mail:
+    <br>
+    <input type = "text" name="tuemail" size="20">
+    <br>
+
+    Nombre de un amigo:
+    <br>
+    <input type = "text" name="nombreamigo" size="20">
+    <br>
+
+    E-mail de tu amigo:
+    <br>
+    <input type = "text" name="emailamigo" size="20">
+    <br>
+    <br>
+    <input type = "submit" name="Recomienda" size="B1">
+    </p>
+</form>
+

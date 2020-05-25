@@ -1,0 +1,54 @@
+
+<!-- 1.- En este ejemplo vamos a mostrar como realizar un formulario de contacto con varios campos, todos los cuales seran enviados al correo electronico de webmaster.
+
+Lo primero sera crear el formulario de contacto, al que llamaremos form.html -->
+<html>
+<head>
+<title>Creación de un portal con PHP y MySQL</title>
+</head>
+<body bgcolor="#303030">
+<body text= "#E5E5E5">
+<font face = "tahoma">
+<font size = "2">
+<body link = "#E5E5E5" vlink="E0E0E0">
+<p align = "center">	
+<STRONG>FORMULARIO DE CONTACTO</STRONG>
+<br><br>
+Inserte los datos que a continuacion se solicitan y en breve nos pondremos en contacto con usted.
+<form name="contacto" method="post" action="contacto.php">
+	<table width="90%" border="2" align="center" bordercolor="#cccccc"> 
+		<tr>
+			<td width="15%"><p><strong>NOMBRE:</strong></p></td>
+			<td colspan="3"><input name="nombre" type="text" value="" size="109"></td>
+		</tr>
+
+		<tr>
+			<td><p><strong>APELLIDOS:</strong></p></td>
+			<td colspan="3"><input name="apellidos" type="text" size="109"></td>
+		</tr>
+
+		<tr>
+			<td><p><strong>DIRECCION:</strong></p></td>
+			<td colspan="3"><input name="direccion" type="text" size="109"></td>
+		</tr>
+
+		<tr>
+			<td width="15%"><p><strong>LOCALIDAD:</strong></p></td>
+			<td width="25%"><input name="localidad" type="text" size="36"></td>
+
+			<td width="15%"><p><strong>ESTADO:</strong></p></td>
+			<td width="25%"><input name="estado" type="text" size="36"></td>
+		</tr>
+
+		<tr>
+			<td><p><strong>TELEFONO:</strong></p></td>
+			<td><input name="telefono" type="text" size="36"></td>
+
+			<td><p><strong>E-MAIL:</strong></p></td>
+			<td><input name="email" type="text" size="36"></td>
+		</tr>
+	</table>
+	<p align="center">
+	<input type="submit" name="Submit" value="Enviar datos">
+	</p>
+</form>

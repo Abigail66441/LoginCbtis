@@ -1,0 +1,30 @@
+<!--3.-Por ultimo, solo quedaria crear un fichero para que  los usuarios que esten ya registrados puedan identificarse en la web; para ello necesitamos crear dos ficheros: el primero sera un formulario con dos campos, uno para el nombre de usuario y otro para la contraseña; el segundo sera un fichero que compruebe  esos datos y nos identique si son correctos.  -->
+
+<head>
+<title>Creación de un portal con PHP y MySQL</title>
+</head>
+<body bgcolor="#303030">
+<body text= "#E5E5E5">
+<font face = "tahoma">
+<font size = "2">
+<body link = "#E5E5E5" vlink="E0E0E0">
+<p align = "center">	
+<STRONG>IDENTIFICARSE</STRONG>
+<br><br>
+<form name="contacto" method="post" action="identifica.php">
+	<p align = "left">
+			<strong>NOMBRE DE USUARIO:</strong>
+			<br>
+			<input name="usuario" type="text" size="50">
+			<br>
+			<br>
+
+			<strong>CONTRASEÑA:</strong>
+			<br>
+			<input name="cont" type="password" size="50">
+			<br>
+
+			<br>
+			<input type="submit" name="Submit" value="Enviar datos">
+	</p>
+</form>
